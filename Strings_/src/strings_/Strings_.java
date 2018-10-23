@@ -68,7 +68,9 @@ public class Strings_ {
                  Date now = new Date();
                  System.out.printf("\n%1$tY-%1$tB-%1$td", now);
                  System.out.printf("\n%1$tY-%1$tB-%1$td", now);//1$ - порядковый номер елемента, следующий сразу за форматирующей строкой
-                }
+                                                               //t - тип выводимого значения date
+                                                               //Y,B,d - год, месяц, и день
+                 }
     }
     
 }
