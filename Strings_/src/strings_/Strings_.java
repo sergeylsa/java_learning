@@ -70,7 +70,7 @@ public class Strings_ {
                  System.out.printf("\n%1$tY-%1$tB-%1$td", now);//1$ - порядковый номер елемента, следующий сразу за форматирующей строкой
                                                                //t - тип выводимого значения date
                                                                //Y,B,d - год, месяц, и день
-                 }
+                 }                                             //https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html - ссылка на тип парамтера строки форматирования
     }
     
 }
