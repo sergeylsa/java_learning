@@ -1,0 +1,29 @@
+package ru.strings;
+
+import static java.lang.System.out; 
+
+public class Program {
+
+
+	public static void main(String[] args) {
+		String s1 = "Привет";
+		String s2 = new String("Привет");
+		char ch = s1.charAt(0);
+		out.println(s1);
+		out.println(ch);
+		
+		String hello = "Привет";
+		String name = "Сергей";
+		String result = hello + " " + name;
+		out.println(result);
+		
+		String r = "";
+		for(int i = 1; i <= 100; i++){
+			r += String.valueOf(i) + " ";
+			out.println(r);
+					
+		}
+
+	}
+
+}

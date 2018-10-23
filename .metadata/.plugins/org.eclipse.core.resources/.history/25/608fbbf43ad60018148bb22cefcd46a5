@@ -1,0 +1,14 @@
+package ru.strings;
+
+import static java.lang.System.out; 
+
+public class Program {
+
+
+	public static void main(String[] args) {
+		String s1 = "Привет";
+		out.println(s1);
+
+	}
+
+}
