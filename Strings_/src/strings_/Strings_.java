@@ -4,9 +4,12 @@ package strings_;
 import static java.lang.System.out;
 import java.util.Scanner;
 import java.util.Date;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.IOException;
 public class Strings_ {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String s1 = "Привет";
 		String s2 = new String("Привет");
 		char ch = s1.charAt(0); 
@@ -37,7 +40,7 @@ public class Strings_ {
 		out.println("input new string: ");
 		String s = sc.nextLine();
 		String s3 = "Sergey";
-		
+		sc.close();
 		//wrong equalse
 		boolean s4 = (s3 == s);
 		out.println(s4);
@@ -71,6 +74,17 @@ public class Strings_ {
                                                                //t - тип выводимого значения date
                                                                //Y,B,d - год, месяц, и день
                  }                                             //https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html - ссылка на тип парамтера строки форматирования
+                {
+                  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                  System.out.println("\nInput random symbol: ");
+                  String s5 = br.readLine();  
+                  System.out.printf("You input %s \n",s5);
+                  
+                    System.out.println("Input number:");
+                    s5 = br.readLine();
+                    int a = Integer.parseInt(s5);
+                }  
+    
     }
     
 }
