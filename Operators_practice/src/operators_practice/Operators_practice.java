@@ -26,7 +26,7 @@ public class Operators_practice {
             prefix = "ворон";
         }else{
             if (cnt >= 0){
-             switch(cnt % 10){
+             switch(n1){
                 case 1: prefix = "ворона";
                         break;
                 case 2:
