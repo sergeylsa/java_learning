@@ -23,7 +23,7 @@ public class Collection_ {
               System.out.println(persons.get(i));
           }
 
-          
+           
           Collection<String> names = persons;
           
           //Устаревший вариант
