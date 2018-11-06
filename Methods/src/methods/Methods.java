@@ -42,6 +42,15 @@ public class Methods {
         return (double)sum / m.length;
     }
     
+    public static void test1(int a){
+        a++;
+        System.out.printf("test 1 a = %d\n", a);
+    }
+    public static void test1(int[] a){
+        a[0]++;
+        System.out.printf("test 2 a = %d\n", a[0]);
+    }
+
 
     public static void main(String[] args) {
 //       sayHello();
@@ -58,7 +67,17 @@ public class Methods {
          //System.out.println(average(new int[]{10,20,30,40}));
          System.out.println(average(10,20,30,40));
          
-         31:00
+         int a = 10;
+         test1(a);
+         System.out.printf("main 1 a = %d\n", a);
+         
+         int[] a1 = {10};
+         test1(a1);
+         System.out.printf("main 2 a = %d\n", a1[0]);
+         
+         
+         
+
     }
     
 }
