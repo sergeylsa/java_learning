@@ -8,7 +8,12 @@ public class OOP {
        p.age = 10;
        p.name = "Sergey";
        p.show();
+       
+       Person p2 = new Person("Vasya",46);
+       //p2.name = "Kostya";
+       //p2.age = 18;
+       p2.show();
     }
     
 }
-//53:46
+//01:18:44
