@@ -8,9 +8,12 @@ public class OOP_Home_work {
        Person p1 = new Person();
        Person p2 = new Person("Sergey", 27);
        Person p3 = new Person("Yana", 27);
+       Person p4 = new Person("Sasha", 27);
        
        Person.showAll();
        
     }
     
 }
+
+//02:09:15

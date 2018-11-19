@@ -9,6 +9,7 @@ public class Person {
     
     private String name;
     private int age;
+    private static int counter;
     
     public static List<Person> pers = new ArrayList<Person>();
     
@@ -19,6 +20,7 @@ public class Person {
         this.age = age;
         this.name = name;
         pers.add(this);
+        counter++;
     }
     
 
@@ -28,9 +30,12 @@ public class Person {
     
     public static void showAll(){
       
+        System.out.printf("Created %d exemplares: \n", counter);
+        System.out.println("=====================");
         for(Person p : pers){
             p.show();
         }
+        
         
     }
     
