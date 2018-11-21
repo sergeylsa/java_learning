@@ -15,7 +15,7 @@ public class GraphicsProject {
         p1.move(90, 90);
         p1.draw();
         
-        System.out.println(p1);
+        //System.out.println(p1);
     }
     
 }
