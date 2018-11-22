@@ -3,6 +3,18 @@ package graphicsproject.graph;
 
 public class GraphObject {
    public String color = "Black";
+   public static final String DEFAULT_COLOR = "Black";
+   
+    public GraphObject() {
+        
+        this(DEFAULT_COLOR);
+        System.out.println("GraphObject() constr");
+    }
+
+   public GraphObject(String color){
+       this.color = color;
+       System.out.println("GraphObject(color) constr");
+   }
    
    public void draw(){
        System.out.printf("GraphObject %s\n",color);
@@ -17,4 +29,4 @@ public class GraphObject {
 }
 
 
-//02:43
+//03:15
