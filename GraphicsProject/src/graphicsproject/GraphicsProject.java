@@ -16,6 +16,7 @@ public class GraphicsProject {
         p1.move(90, 90);
         p1.draw();
         
+        
         Circle c1 = new Circle(15, 3, 4, "Blu");
         c1.draw();
         

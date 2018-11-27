@@ -1,6 +1,12 @@
 
 package graphicsproject.graph;
-
+/*
+    access level     modifier   visibility
+      public          public      world
+      package                     package
+      protected      protected    this+inherit+package
+      private        private      this class
+*/
 
 public class Point extends GraphObject implements Cloneable{
    public int x;
