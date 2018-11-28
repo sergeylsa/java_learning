@@ -1,9 +1,14 @@
 
 package graphicsproject.graph;
 
+import java.util.ArrayList;
+import static java.util.Collections.list;
+import java.util.List;
+
 public class GraphObject {
-   public String color = "Black";
+   protected String color = "Black";
    public static final String DEFAULT_COLOR = "Black";
+   private static List<GraphObject> scene = new ArrayList<GraphObject>();
    
     public GraphObject() {
         
@@ -14,6 +19,7 @@ public class GraphObject {
    public GraphObject(String color){
        this.color = color;
        System.out.println("GraphObject(color) constr");
+       scene.add(this);
    }
    
    public void draw(){
@@ -24,9 +30,20 @@ public class GraphObject {
     public String toString() {
         return String.format("GraphObject %s\n",color);
     }
+   public String getColor(){
+       return this.color;
+   }
    
+   public static void drawScene(){
+       System.out.println("*****************************");
+       for(GraphObject g : scene){
+           g.draw();
+       }
+   }
+   
+ 
    
 }
 
 
-//03:15
+//4.1 19:02

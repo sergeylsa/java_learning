@@ -38,8 +38,12 @@ public class Circle extends GraphObject{
     }
  
     public void setRadius(int radius){
-        this.radius = radius;
-    
+        
+        if(radius > 0){
+            this.radius = radius;
+        }else{
+            System.out.println("error");
+        }
     }    
     public int getRadius(){
         return this.radius;

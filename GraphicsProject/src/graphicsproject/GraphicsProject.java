@@ -2,7 +2,9 @@
 package graphicsproject;
 
 import graphicsproject.graph.Circle;
+import graphicsproject.graph.GraphObject;
 import graphicsproject.graph.Point;
+import graphicsproject.graph.Singleton;
 
 
 public class GraphicsProject {
@@ -16,6 +18,11 @@ public class GraphicsProject {
         p1.move(90, 90);
         p1.draw();
         
+        System.out.println(p1.getColor());
+        
+       
+        
+        
         
         Circle c1 = new Circle(15, 3, 4, "Blu");
         c1.draw();
@@ -27,7 +34,14 @@ public class GraphicsProject {
         p2.draw();
         System.out.println(p1);
         
-        //System.out.println("");
+        
+        GraphObject.drawScene();
+        
+        
+        Singleton s = Singleton.getInstance();
+        System.out.println(s.toString());
+        Singleton s2 = Singleton.getInstance();
+        System.out.println(s2.toString());
     }
     
 }
