@@ -19,15 +19,15 @@ public class Point extends GraphObject implements Cloneable{
     
     public Point(int x, int y){
         this(x, y, DEFAULT_COLOR);
-        System.out.println("Point(x,y) constr");
+       // System.out.println("Point(x,y) constr");
     }
 
    public Point(int x, int y, String color){
        
-      super(color);
+      //super(color);
        this.x= x;
        this.y = y;
-       System.out.println("Point(x,y,color) constr");
+       //System.out.println("Point(x,y,color) constr");
    }
    
    public void move(int dx, int dy){
@@ -38,7 +38,7 @@ public class Point extends GraphObject implements Cloneable{
 
     @Override
     public void draw() {
-        super.draw();
+       // super.draw();
         System.out.println(this);    
     }
 
